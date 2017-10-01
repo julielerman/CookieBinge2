@@ -95,7 +95,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BingeContext.cs" />
+    <Compile Include="BingeService.cs" />
     <Compile Include="BingeViewModel.cs" />
+    <Compile Include="CookieBinge.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -132,12 +135,6 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.0-preview1-25706-01</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CookieBinge.Data\CookieBinge.Data.csproj">
-      <Project>{ee6315ff-1869-4dc4-ad4c-2318307afc2e}</Project>
-      <Name>CookieBinge.Data</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -1,4 +1,5 @@
 ﻿using CookieBinge20;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.IO;
 using Windows.ApplicationModel;
@@ -23,15 +24,10 @@ namespace CookieBinge2._0
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-            var dbFilePath = "CookieBinge.db";
-            try
-            {
-                dbFilePath = Path.Combine(ApplicationData.Current.LocalFolder.Path, dbFilePath);
+            using (var context = new BingeContext()) {
+                context.Database.EnsureCreated();
+                context.Database.Migrate();
             }
-            catch (InvalidOperationException)
-            {
-            }
-            BingeService.EnsureDbExists(dbFilePath);
         }
 
         /// <summary>
