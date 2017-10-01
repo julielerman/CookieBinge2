@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using CookieBinge20;
+using System;
 using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 namespace CookieBinge2._0
@@ -30,6 +23,15 @@ namespace CookieBinge2._0
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            var dbFilePath = "CookieBinge.db";
+            try
+            {
+                dbFilePath = Path.Combine(ApplicationData.Current.LocalFolder.Path, dbFilePath);
+            }
+            catch (InvalidOperationException)
+            {
+            }
+            BingeService.EnsureDbExists(dbFilePath);
         }
 
         /// <summary>
