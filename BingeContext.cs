@@ -11,10 +11,15 @@ namespace CookieBinge20
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
+            var dbPath = "CookieBinge.db";
+            try
+            {
+                dbPath = Path.Combine(ApplicationData.Current.LocalFolder.Path, dbPath);
+            }
+            catch (InvalidOperationException) { }
 
-           
+            options.UseSqlite($"Data source={dbPath}");
 
-            options.UseSqlite($"Data source={databaseFilePath}");
         }
     }
 }

@@ -115,7 +115,7 @@
     <Content Include="Assets\Emoticon_Cool_Blue.png" />
     <Content Include="Assets\Emoticon_Dead_Orange.png" />
     <Content Include="Assets\Go.png" />
-    <Content Include="Assets\many cookies.png" />
+    <Content Include="Assets\manycookies.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
@@ -132,6 +132,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite">
+      <Version>2.0.0</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.0-preview1-25706-01</Version>
     </PackageReference>

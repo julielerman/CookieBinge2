@@ -87,10 +87,10 @@
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0" Width="322" Height="57" VerticalAlignment="Center" >
                             <TextBlock FontSize="20"  Text="Your Latest Binges" Margin="1,11,1,11.875" Foreground="#FFF9F9F9" Width="254" TextAlignment="Center"/>
                             <Image 
-            	Source="Assets/many cookies.png" Height="34" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="61" 
+            	Source="Assets/manycookies.png" Height="34" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="61" 
                     />
                         </StackPanel>
-                        <ListView ItemsSource="{Binding .}" Margin="5,10,5,0" x:Name="BingeList" HorizontalContentAlignment="Stretch">
+                        <!--<ListView ItemsSource="{Binding AllItems}" Margin="5,10,5,0" x:Name="BingeList" HorizontalContentAlignment="Stretch">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <Border BorderBrush="White" BorderThickness="2" CornerRadius="10" Padding="5" Margin="5,5,5,0">
@@ -113,7 +113,7 @@
                                     </Border>
                                 </DataTemplate>
                             </ListView.ItemTemplate>
-                        </ListView>
+                        </ListView>-->
                         <Button x:Name="ClearHistory" Content="Clear History" Click="ClearHistory_Click" FontSize="16" Background="#33F9F8F8" Foreground="#FFF7F7F7" Width="117" VerticalAlignment="Bottom" Height="31" HorizontalAlignment="Stretch" Margin="0"/>
 
                     </StackPanel>
