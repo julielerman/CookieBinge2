@@ -24,9 +24,9 @@
 
                     <Grid x:Name="BingeGrid" Margin="0,1,1,49">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="150" />
+                            <RowDefinition Height="67" />
                             <RowDefinition />
-                            <RowDefinition Height="*" />
+                            <RowDefinition Height="420" />
                         </Grid.RowDefinitions>
 
                         <Button 
@@ -37,27 +37,28 @@
                     Tapped="Play_Tapped" 
                   
                     Visibility="{Binding StartControlsVisibility}" VerticalAlignment="Top" Height="52" Width="52" Padding="4,0" VerticalContentAlignment="Top" Background="{x:Null}"  ToolTipService.ToolTip="Start the Binge!">
-                            <Image Source="Assets/Go.png" Margin="-6,-2,-146,-86" Width="136" Height="136"/>
+                            <Image Source="Assets/Go.png" Margin="-6,-2"/>
                         </Button>
 
                         <Button 
                 	x:Name="StopHappy" 
                 	Grid.Row="0" 
-                	Margin="0,0,150,0" 
+                	Margin="0,12,57,0" 
                 	FontSize="16" 
                 	
-                	Visibility="{Binding StopControlsVisibility}" Click="WorthIt_Click" Foreground="#FFD00A0A" HorizontalAlignment="Right" Width="150" Height="150" VerticalAlignment="Bottom" Background="{x:Null}" ToolTipService.ToolTip="Stop Binging. I feel so good!">
-                            <Image Source="Assets/Emoticon_Cool_Blue.png" Width="136" Height="136"/>
+                	Visibility="{Binding StopControlsVisibility}" Click="WorthIt_Click" Foreground="#FFD00A0A" HorizontalAlignment="Right" Width="52" Height="52" VerticalAlignment="Bottom" Background="{x:Null}" ToolTipService.ToolTip="Stop Binging. I feel so good!">
+                            <Image Source="Assets/Emoticon_Cool_Blue.png" Margin="-10,-6" Width="52" Height="52"/>
                         </Button>
                         <Button 
                 	x:Name="StopGuilt" 
+                	Margin="0,12,0,0" 
                 	FontSize="16" 
                 	
-                	Visibility="{Binding StopControlsVisibility}" Click="NotWorthIt_Click" Foreground="#FFF1E105" HorizontalAlignment="Right" Width="150" Height="150" Background="{x:Null}" ToolTipService.ToolTip="Stop Binging! I'm gonna explode!">
-                            <Image Source="Assets/Emoticon_Dead_Orange.png" Width="136" Height="136"/>
+                	Visibility="{Binding StopControlsVisibility}" Click="NotWorthIt_Click" Foreground="#FFF1E105" HorizontalAlignment="Right" Width="52" Height="52" Background="{x:Null}" ToolTipService.ToolTip="Stop Binging! I'm gonna explode!">
+                            <Image Source="Assets/Emoticon_Dead_Orange.png" Margin="-10,-6" Width="52" Height="52"/>
                         </Button>
 
-                        <StackPanel Grid.Row="2" Margin="16,-7,10,-1188">
+                        <StackPanel Grid.Row="2" Margin="16,-109,10,-618">
                             <StackPanel Orientation="Horizontal" Margin="0,10,10,64">
                                 <TextBlock Margin="0,0,10,0" FontSize="30" Text="Cookies Eaten: " Width="198" />
                                 <TextBlock FontSize="30" x:Name="ClickCount" Text="{Binding ClickCount}" RenderTransformOrigin="0.5,0.5" Width="83" />
@@ -70,11 +71,7 @@
 
                                 <Image x:Name="CookieImage" 
                 		Source="Assets/Cookie.png" 
-                		Margin="362,-402,346,-119" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="True" PointerPressed="CookieImage_PointerPressed" PointerReleased="CookieImage_PointerReleased" Tapped="CookieImage_Tapped" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" >
-                                    <Image.RenderTransform>
-                                        <CompositeTransform ScaleY="-1"/>
-                                    </Image.RenderTransform>
-                                </Image>
+                		Margin="10,0,10,0" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="True" PointerPressed="CookieImage_PointerPressed" PointerReleased="CookieImage_PointerReleased" Tapped="CookieImage_Tapped" Grid.RowSpan="2" />
                             </Grid>
                         </StackPanel>
                     </Grid>

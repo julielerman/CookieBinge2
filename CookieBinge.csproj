@@ -115,7 +115,7 @@
     <Content Include="Assets\Emoticon_Cool_Blue.png" />
     <Content Include="Assets\Emoticon_Dead_Orange.png" />
     <Content Include="Assets\Go.png" />
-    <Content Include="Assets\manycookies.png" />
+    <Content Include="Assets\many cookies.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
@@ -126,6 +126,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="DeviceFamily-Mobile\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -139,6 +143,7 @@
       <Version>6.0.0-preview1-25706-01</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
