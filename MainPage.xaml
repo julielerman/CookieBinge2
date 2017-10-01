@@ -90,7 +90,7 @@
             	Source="Assets/many cookies.png" Height="34" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="61" 
                     />
                         </StackPanel>
-                        <ListView ItemsSource="{Binding .}" Margin="5,10,5,0" x:Name="BingeList" HorizontalContentAlignment="Stretch">
+                        <ListView ItemsSource="{Binding AllItems}" Margin="5,10,5,0" x:Name="BingeList" HorizontalContentAlignment="Stretch">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <Border BorderBrush="White" BorderThickness="2" CornerRadius="10" Padding="5" Margin="5,5,5,0">
