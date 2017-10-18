@@ -1,6 +1,6 @@
 ﻿<Page
-    x:Class="CookieBinge20.MainPage"
-    xmlns:local="using:CookieBinge20"
+    x:Class="CookieBinge2.MainPage"
+    xmlns:local="using:CookieBinge2"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

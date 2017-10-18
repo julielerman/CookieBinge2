@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CookieBinge20
+namespace CookieBinge2
 {
-    public class BingeService
+    public static class BingeService
     {
         public static void RecordBinge(int count, bool worthIt)
         {
@@ -22,15 +22,13 @@ namespace CookieBinge20
             }
         }
 
-        public static IEnumerable<CookieBinge> GetLast5Binges()
+        public static IEnumerable<CookieBinge> GetRecentBinges(int numberToRetrieve)
         {
             using (var context = new BingeContext())
             {
-                var latestBinges = context.Binges
+                return context.Binges
                   .OrderByDescending(b => b.TimeOccurred)
-                  .Take(5).ToList();
-
-                return latestBinges;
+                  .Take(numberToRetrieve).ToList();
             }
         }
 

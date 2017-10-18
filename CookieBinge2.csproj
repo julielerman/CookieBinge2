@@ -17,7 +17,8 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
-    <PackageCertificateKeyFile>CookieBinge2.0_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>CookieBinge2_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>7F6CFE2EA6AE2A12E73E3D32EF1C56B6E1599FAD</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -99,6 +100,7 @@
     <Compile Include="BingeService.cs" />
     <Compile Include="BingeViewModel.cs" />
     <Compile Include="CookieBinge.cs" />
+    <Compile Include="DateTimeConverter.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -108,7 +110,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="CookieBinge2.0_TemporaryKey.pfx" />
+    <None Include="CookieBinge2_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\cookie.png" />

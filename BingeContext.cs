@@ -1,9 +1,9 @@
 ﻿using System;
-using Microsoft.EntityFrameworkCore;
 using System.IO;
+using Microsoft.EntityFrameworkCore;
 using Windows.Storage;
 
-namespace CookieBinge20
+namespace CookieBinge2
 {
     public class BingeContext:DbContext
     {

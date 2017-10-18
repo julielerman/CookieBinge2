@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using Windows.UI.Xaml;
 
-namespace CookieBinge20
+namespace CookieBinge2
 {
     public class BingeViewModel : INotifyPropertyChanged
     {
@@ -36,7 +36,7 @@ namespace CookieBinge20
 
         public Visibility StopControlsVisibility
         {
-            get => _stopControlsVisibility;
+            get { return _stopControlsVisibility; }
             set
             {
                 _stopControlsVisibility = value;
@@ -46,7 +46,7 @@ namespace CookieBinge20
 
         public bool Binging
         {
-            get => _playing;
+            get { return _playing; }
             set
             {
                 _playing = value;

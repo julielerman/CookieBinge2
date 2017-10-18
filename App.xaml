@@ -1,8 +1,8 @@
 ﻿<Application
-    x:Class="CookieBinge2._0.App"
+    x:Class="CookieBinge2.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:CookieBinge2._0"
+    xmlns:local="using:CookieBinge2"
     RequestedTheme="Light">
 
 </Application>

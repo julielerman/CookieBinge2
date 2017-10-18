@@ -2,7 +2,7 @@
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 
-namespace CookieBinge20
+namespace CookieBinge2
 {
     public sealed partial class MainPage 
     {
@@ -27,7 +27,7 @@ namespace CookieBinge20
 
         private void ReloadHistory()
         {
-            BingeList.ItemsSource = BingeService.GetLast5Binges();
+            BingeList.ItemsSource = BingeService.GetRecentBinges(5);
         }
 
         //private void Image_Tapped(object sender, TappedRoutedEventArgs e) {

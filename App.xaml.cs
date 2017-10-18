@@ -1,5 +1,4 @@
-﻿using CookieBinge20;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -7,7 +6,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
-namespace CookieBinge2._0
+namespace CookieBinge2
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CookieBinge20
+namespace CookieBinge2
 {
     public class CookieBinge
     {
