@@ -16,7 +16,7 @@ namespace CookieBinge20
 
         public int ClickCount
         {
-            get { return _clickCount; }
+            get => _clickCount;
             set
             {
                 _clickCount = value;
@@ -26,7 +26,7 @@ namespace CookieBinge20
 
         public Visibility StartControlsVisibility
         {
-            get { return _startControlsVisibility; }
+            get => _startControlsVisibility;
             set
             {
                 _startControlsVisibility = value;
@@ -36,7 +36,7 @@ namespace CookieBinge20
 
         public Visibility StopControlsVisibility
         {
-            get { return _stopControlsVisibility; }
+            get => _stopControlsVisibility;
             set
             {
                 _stopControlsVisibility = value;
@@ -46,7 +46,7 @@ namespace CookieBinge20
 
         public bool Binging
         {
-            get { return _playing; }
+            get => _playing;
             set
             {
                 _playing = value;

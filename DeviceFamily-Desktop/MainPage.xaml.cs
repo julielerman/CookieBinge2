@@ -7,7 +7,7 @@ namespace CookieBinge20
 {
     public sealed partial class MainPage : Page
     {
-        private readonly BingeViewModel _binge;
+        private BingeViewModel _binge;
 
         public MainPage()
         {
