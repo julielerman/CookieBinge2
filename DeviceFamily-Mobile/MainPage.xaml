@@ -20,7 +20,7 @@
         </Grid.RowDefinitions>
         <Pivot x:Name="rootPivot" Title="Cookie Binging" Grid.Row="1" Grid.ColumnSpan="2" Margin="0,0,10,0" Grid.RowSpan="2">
             <PivotItem Header="Game" Margin="12,0,10,3">
-                <Grid x:Name="BingePane" Grid.Column="0" BorderThickness="1" BorderBrush="Black">
+                <Grid x:Name="BingePane" BorderThickness="1" BorderBrush="Black">
 
                     <Grid x:Name="BingeGrid" Margin="0,1,1,49">
                         <Grid.RowDefinitions>
@@ -63,7 +63,7 @@
                                 <TextBlock Margin="0,0,10,0" FontSize="30" Text="Cookies Eaten: " Width="198" />
                                 <TextBlock FontSize="30" x:Name="ClickCount" Text="{Binding ClickCount}" RenderTransformOrigin="0.5,0.5" Width="83" />
                             </StackPanel>
-                            <Grid x:Name="ImageGrid" Grid.Row="1">
+                            <Grid x:Name="ImageGrid">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="0*"/>
                                     <RowDefinition/>
@@ -82,7 +82,7 @@
             </PivotItem>
             <PivotItem Header="Scores">
 
-                <StackPanel Name="ScorePane" Grid.Column="1" Background="#FFF5EEEE">
+                <StackPanel Name="ScorePane" Background="#FFF5EEEE">
 
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0" Width="322" Height="57" VerticalAlignment="Center" >
                         <TextBlock FontSize="20"  Text="Your Latest Binges" Margin="1,11,1,11.875" Foreground="#FFF9F9F9" Width="254" TextAlignment="Center"/>

@@ -1,11 +1,10 @@
-﻿using System;
-using Windows.UI.Xaml;
+﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 
 namespace CookieBinge20
 {
-    public sealed partial class MainPage : Page
+    public sealed partial class MainPage 
     {
         private readonly BingeViewModel _binge;
 
@@ -40,9 +39,6 @@ namespace CookieBinge20
             _binge.StartNewBinge();
         }
 
-        private void AddCookies_Click(object sender, RoutedEventArgs e)
-        {
-        }
 
         private void WorthIt_Click(object sender, RoutedEventArgs e)
         {
