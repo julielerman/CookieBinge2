@@ -26,7 +26,7 @@ namespace CookieBinge2
 
         private void ReloadHistory()
         {
-            BingeList.ItemsSource = BingeService.GetLast5Binges();
+            BingeList.ItemsSource = BingeService.GetRecentBinges(5);
         }
 
         //private void Image_Tapped(object sender, TappedRoutedEventArgs e) {
