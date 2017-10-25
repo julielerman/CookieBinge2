@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26923.0
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieBinge", "CookieBinge.csproj", "{4DA57087-8DB7-4304-B1DC-B6AA4ED1ED3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieBinge2", "CookieBinge2.csproj", "{4DA57087-8DB7-4304-B1DC-B6AA4ED1ED3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieBinge.Data", "..\CookieBinge.Data\CookieBinge.Data.csproj", "{EE6315FF-1869-4DC4-AD4C-2318307AFC2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookieBinge2.Data", "..\CookieBinge.Data\CookieBinge2.Data.csproj", "{EE6315FF-1869-4DC4-AD4C-2318307AFC2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

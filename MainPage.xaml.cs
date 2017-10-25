@@ -1,8 +1,9 @@
 ﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
+using CookieBinge2.Data;
 
-namespace CookieBinge20
+namespace CookieBinge2
 {
     public sealed partial class MainPage : Page
     {
@@ -63,7 +64,7 @@ namespace CookieBinge20
 
                 NomText.Visibility = Visibility.Visible;
                 _binge.HandleClick();
-                ReloadHistory();
+      
 
             }
         }

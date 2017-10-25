@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel;
 using Windows.UI.Xaml;
+using CookieBinge2.Data;
 
-namespace CookieBinge20
+namespace CookieBinge2
 {
     public class BingeViewModel : INotifyPropertyChanged
     {

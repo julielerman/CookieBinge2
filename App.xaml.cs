@@ -1,5 +1,4 @@
-﻿using CookieBinge20;
-using System;
+﻿using System;
 using System.IO;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -7,8 +6,9 @@ using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using CookieBinge2.Data;
 
-namespace CookieBinge2._0
+namespace CookieBinge2
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
